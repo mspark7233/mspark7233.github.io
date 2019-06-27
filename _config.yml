@@ -16,7 +16,7 @@
 title: Mspark Blog
 email: mspark7233@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  To summerize what i've developed.
+  To summarize what i've developed.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://mspark7233.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: mspark7233
