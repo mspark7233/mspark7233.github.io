@@ -78,7 +78,7 @@ For this scenario we have added a new SASL mechanism that is used internally by 
 4. Server verifies token received and deletes the file.
 ```
 
-즉 'client는 JBOSS-LOCAL-USER 인증이 가능한지만 물어보고,  server가 가능하다 라고 판된되면 파일을 생성하여 응답한다' 라고 하면 server쪽에서 JBOSS-LOCAL-USER 메카니즘은 안된다고 설정 하면 되는 구나' 라고 생각하여, 서버쪽에 사용 인증을 제거 하니 로그가 더 이상 남지 않음을 확인함. 
+즉 'client는 JBOSS-LOCAL-USER 인증이 가능한지만 물어보고,  server가 가능하다 라고 판단되면 파일을 생성하여 응답한다' 라고 하면 server쪽에서 JBOSS-LOCAL-USER 메카니즘은 안된다고 설정 하면 되는 구나' 라고 생각하여, 서버쪽에 사용 인증을 제거 하니 로그가 더 이상 남지 않음을 확인함. 
 [[참고 사이트](https://access.redhat.com/documentation/en-us/jboss_enterprise_application_platform/6/html/administration_and_configuration_guide/remove_silent_authentication_from_the_default_security_realm)]
 
 
