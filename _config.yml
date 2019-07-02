@@ -32,6 +32,8 @@ plainwhite:
   tagline: Developer
   date_format: "%b %-d, %Y"
   sitemap: true
+  disqus_shortname: "mspark7233-blog-1"
+  analytics_id: "UA-143194161-1"
   social_links:
     twitter: mspark7233 
 
