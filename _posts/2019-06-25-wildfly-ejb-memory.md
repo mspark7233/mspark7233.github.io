@@ -82,6 +82,19 @@ For this scenario we have added a new SASL mechanism that is used internally by 
 [[참고 사이트](https://access.redhat.com/documentation/en-us/jboss_enterprise_application_platform/6/html/administration_and_configuration_guide/remove_silent_authentication_from_the_default_security_realm)]
 
 
+# 결과
+### heapdump 결과 비교
+![이슈 처리 전](/assets/post/2019-06-25-wildfly-ejb-memory/oldheapdump.png){: width="900" class="border"} *[이슈 처리 전]*
+![이슈 처리 후](/assets/post/2019-06-25-wildfly-ejb-memory/currentheapdump.png){: width="900" class="border"} *[이슈 처리 후]*
+
+ConnectionImpl의 AuthMap 멤버 변수의 메모리 할당이 300M -> 0으로 변경 됨
+Full GC 횟수 감소 
+
+GC로그 분석은 [gcplot](https://gcplot.com/) 으로 분석 하였으며 Tenured Used에 여유 공간이 확보 됨
+![이슈 처리 전](/assets/post/2019-06-25-wildfly-ejb-memory/oldtenuredUsed.png){: width="900" class="border"} *[이슈 처리 전]*
+![이슈 처리 후](/assets/post/2019-06-25-wildfly-ejb-memory/currenttenuredUsed.png){: width="900" class="border"} *[이슈 처리 후]*
+
+
 끝.
 # 느낀점
  1. wildfly 설정은 어렵다. 
