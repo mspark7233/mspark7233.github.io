@@ -98,7 +98,7 @@ dependency 변경
 
 ##  EmbeddedServletContainerCustomizer -> WebServerFactoryCustomizer
 
-reactive를 지원하기 위해 EmbeddedServletContainer가 WebServer로 변경되었고, EmbeddedServletContainerCustomizer는 WebServerFactoryCustomizer 변경 되었다. 
+reactive를 지원하기 위해 EmbeddedServletContainer가 WebServer로 변경되었고, EmbeddedServletContainerCustomizer는 WebServerFactoryCustomizer 변경 되었다.
 
 일단 tomcat servlet만 지원하기 위해 EmbeddedServletContainerCustomizer를 ```WebServerFactoryCustomizer<TomcatServletWebServerFactory>```로 고쳐서 수정한다.
 
