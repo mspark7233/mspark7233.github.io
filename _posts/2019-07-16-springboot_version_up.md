@@ -38,6 +38,7 @@ Release Train  |  Boot Version
 ## io.spring.platform platform-bom 버전 변경
 
 [Spring IO Platform 문서](https://spring.io/projects/platform)를 보니 2019.4.9일 까지 Support를 하며, 가이드 상으로는 spring-boot-starter-parent나 spring-boot-dependency를 사용할 것을 권고한다.
+
 spring-boot-starter-parent를 사용 못할 경우 spring-boot-dependency를 dependency manager에서 import 하여 사용한다.
 
 ```xml
@@ -97,7 +98,7 @@ dependency 변경
 
 ##  EmbeddedServletContainerCustomizer -> WebServerFactoryCustomizer
 
-reactive를 지원하기 위해 EmbeddedServletContainer가 WebServer로 변경되었고, EmbeddedServletContainerCustomizer는 WebServerFactoryCustomizer 변경 되었다.
+reactive를 지원하기 위해 EmbeddedServletContainer가 WebServer로 변경되었고, EmbeddedServletContainerCustomizer는 WebServerFactoryCustomizer 변경 되었다. 
 
 일단 tomcat servlet만 지원하기 위해 EmbeddedServletContainerCustomizer를 ```WebServerFactoryCustomizer<TomcatServletWebServerFactory>```로 고쳐서 수정한다.
 
